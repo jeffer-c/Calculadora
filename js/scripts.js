@@ -22,9 +22,11 @@ buttons.forEach((item)=>{
 const themeTogglerBtn = document.querySelector(".theme-toggler");
 const calculator = document.querySelector(".calculator");
 const toggleIcon = document.querySelector("toggler-icon");
+const fondo = document.getElementsByTagName("body");
 let isDark = true;
 themeTogglerBtn.onclick=()=>{
     calculator.classList.toggle("dark");
     themeTogglerBtn.classList.toggle("active");
+    fondo[0].classList.toggle("fondoClassic");
     isDark =!isDark;
 }

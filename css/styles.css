@@ -6,7 +6,22 @@
 }
 
 body {
-  background: linear-gradient(45deg, rgba(122, 0, 204, 0.795), rgba(0, 222, 204, 0.795));
+  background: linear-gradient(45deg, rgba(204, 116, 0, 0.795), rgba(0, 222, 204, 0.795));
+}
+
+.fondoClassic {
+  background: white;
+}
+.fondoClassic button {
+  border-radius: 0px;
+  font-weight: bold;
+}
+.fondoClassic button:hover {
+  transform: scale(1);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.fondoClassic .calculator {
+  border-radius: 0px;
 }
 
 .container {
@@ -16,6 +31,21 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.35);
 }
 
 .calculator {
@@ -41,24 +71,24 @@ body {
   font-weight: 800px;
 }
 .calculator #clear {
-  background: red;
-  color: rgb(105, 1, 1);
+  background: rgb(102, 91, 91);
+  color: rgb(246, 246, 246);
 }
 .calculator .btn-number {
-  background-color: aquamarine;
-  color: rgb(42, 84, 70);
+  background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
 }
 .calculator .btn-operator {
-  background-color: blueviolet;
+  background-color: rgb(253, 98, 2);
   color: rgb(67, 16, 115);
 }
 .calculator .btn-equal {
-  background-color: darkgoldenrod;
-  color: rgb(84, 62, 4);
+  background-color: rgb(102, 91, 91);
+  color: rgb(255, 255, 255);
   height: 130px;
 }
 .calculator.dark {
-  background-color: #333;
+  background: #333;
 }
 .calculator.dark #display {
   color: white;
@@ -109,17 +139,4 @@ body {
   background-color: white;
 }
 
-button {
-  height: 60px;
-  width: 60px;
-  border: 0;
-  border-radius: 30px;
-  margin: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all 250ms ease;
-}
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.35);
-}/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css.map */
